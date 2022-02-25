@@ -31,6 +31,9 @@ public class UserProfile
         genre= givenGenre;
     }
 
+    public UserProfile() {
+    }
+
     /**
      * A getter for the userID
      * @return the userID
@@ -60,7 +63,12 @@ public class UserProfile
     public void setGenre(String genre) {
         this.genre = genre;
     }
-    
+
+    public void printArray(){
+        for(int i = 0; i < genres.length; i++){
+            System.out.println(genres[i]);
+        }
+    }
     
     
     
